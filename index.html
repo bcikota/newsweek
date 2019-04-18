@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/newsweek-icon.png" />
+    <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
+    <style>
+      body {
+        background-color: rgb(244,245,246);
+      }
+
+      @media only screen and (max-width: 400px) {
+        [alt="logo"] {
+          width: 110px;
+        }
+      }
+
+      @media only screen and (max-width: 991px) {
+        main {
+        z-index: -2;
+        position: static !important;
+      }
+
+      nav.fixed {
+        position: sticky !important; top: 0;
+        z-index: 1 !important;
+      }
+
+      }
+      main {
+        z-index: -2;
+        position: absolute;
+      }
+
+      ul.style a:hover {
+        background: black;
+        color: white !important;
+      }
+
+      ul.style a {
+        padding-left: 1em !important;
+      }
+      
+      nav.head ul li a {
+        font-weight: bolder;
+        font-size: 1.2em;
+        color: black;
+        
+        padding: 0;
+      }
+
+      nav.head ul li {
+        border-left: 1px solid rgba(187, 186, 186, 0.698);
+        padding-left: 1em;
+      }
+
+      nav.head ul li:first-of-type,
+      nav.head ul li:last-of-type {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      [href="former"] {
+        text-decoration-color: red !important;
+        color: black; 
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      [href="former"]:hover {
+        color: black;
+      }
+      
+      [href="Giuliani"]:hover {
+        color: red !important;
+      }
+
+      h6 {
+        color:grey;
+      }
+
+      [href="Parkland"]:hover,
+      [href="Parkland"] {
+        color:black;
+      }
+
+      [href="Parkland"]:hover {
+        text-decoration-color: red;
+      }
+
+
+      @media only screen and (max-width: 480px){
+        [alt="MORE STORIES image"] {
+          width: 150px !important;
+        }
+
+        .latest-news article {
+           min-height: 130px !important;
+         }
+      }
+
+      [alt="MORE STORIES image"] {
+        width: 255px;
+      }
+       
+      .latest-news article {
+        min-height: 200px;
+      }
+
+      
+      
+      .opinion a:hover,
+      .latest-news article a:hover,
+      [href="White House"]:hover {
+        color: red !important;
+      }
+
+      .sign-up a:first-of-type:hover {
+        background-color: rgb(180, 180, 180) !important;
+      }
+
+      [href="features"]:hover {
+        background: rgb(216, 214, 214) !important;
+      }
+
+      [href="Kareem"],
+      [href="muslim women"],
+      [href="Couple"],
+      [href="Digital"] {
+        color: black;
+      }
+      
+      [href="Kareem"]:hover,
+      [href="muslim women"]:hover,
+      [href="Couple"]:hover,
+      [href="Digital"]:hover {
+        color: black;
+        text-decoration-color: red;
+      }
+
+      [href="Couple"] {
+        margin: .5em 0 1em 0;
+        display: block;
+      }
+
+      [href="Digital"] {
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-left: .5em;
+      }
+
+      footer a {
+        text-decoration: none !important;
+        color: grey;
+        
+      }
+
+      footer a:hover {
+        color: rgb(82, 82, 82);
+      }
+
+      .padding a {
+        padding: .5em;
+      }
+
+      [alt="MORE-STORIES-image"] {
+        width: 150px;
+      }
+
+      
+
+      @media only screen and (min-width: 768px) {
+        .featured-slideshows .row:last-of-type div {
+          border-top: none !important;
+        }
+
+        .latest-news .article {
+         min-height: 0;
+         font-size: .9em;
+         margin-top: 0 !important;
+        
+       }
+
+       .latest-news .article img {
+        margin-bottom: 1em;
+         
+       }
+
+       .latest-news .article a {
+       margin-top: -.5em;
+       }
+
+       .subscribe div {
+         border-bottom: 0 !important;
+       }
+
+       .small-pic {
+          max-width: 140px;
+          max-height: 100px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav style="z-index:-1; position: fixed;  background-color: rgb(247,34,16);" class="fixed align-content-center navbar  container-fluid
+     text-white navbar-dark">
+     <div class="row w-100" >
+      <a class="navbar-brand col-5 p-0 pl-3" style="height: 30px;" href="#">
+        <img src="images/logo.png"   alt="logo">
+      </a>
+      <div class="col pr-0 font-weight-bolder">
+        <div class="row justify-content-end pr-0">
+          <a class=" text-white px-2 pt-2 text-decoration-none" style="font-size:.8em;" href="#">SIGN IN</a>
+          <a class=" text-danger px-2 pt-2 text-decoration-none" style="font-size:.8em; background: white;" href="#" >SUBSCRIBE</a>
+          <button class="navbar-toggler p-0 ml-2 "  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon" style=" width: 25px;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="style navbar-nav float-right  mt-3" style="margin-right: -1em; background: white;">
+              <li>
+                  <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-1"  type="text" placeholder="Search">
+                  </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">U.S.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">World</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Tech & Science</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Opinion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Ndelible</a>
+              </li>    
+            </ul>
+          </div> 
+        </div>
+      </div>
+     </div>
+    </nav>
+
+
+
+    <!-- HEADER -->
+    <div class="d-none d-lg-block" style=" background-color: rgb(244,245,246);" >
+      <header style="background-color: rgb(247,34,16); max-width:1320px; margin:0 auto;" class="container-fluid">
+        <div class="row justify-content-between align-items-end pb-3 px-3 pt-1">
+          <div class="text-white">Wed, Feb 13, 2019</div>
+          <a class="navbar-brand " href="#">
+            <img src="images/logo-big.png" alt="logo">
+          </a>
+          <div>
+              <a class=" text-white  text-decoration-none pr-2 font-weight-bolder" href="#">SIGN IN</a>
+              <a class=" text-danger  text-decoration-none font-weight-bolder p-2" style=" background: white;" href="#" >SUBSCRIBE</a>
+          </div>
+        </div>
+        <nav class="head row navbar navbar-expand" style=" background-color: white;">
+          <ul class="navbar-nav  container-fluid">
+            <li class="nav-item">
+              <a class="nav-link" href="#">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item" style="min-width:170px;">
+              <a class="nav-link"  href="#">Tech & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Opinion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ndelible</a>
+            </li>   
+            <li>
+              <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-1"  type="text" placeholder="Search" style="width:100%;">
+              </form>
+            </li> 
+          </ul>
+        </nav>
+      </header>
+    </div> 
+
+
+    
+    <!-- MAIN -->
+    <main class="w-100">
+      <div class="container-fluid  bg-white pt-3" style="max-width:1320px; margin-top: 2px;">
+          <div class="container-fluid d-none d-lg-block">
+              <div class="row">
+                <div class="col-lg">
+                  <!-- FEATURED STORIES SM-->
+            <section class="pt-4 pt-sm-0 featured-stories bg-white">
+                <h6 class="font-weight-bold" style="color:grey;">FEATURED STORIES</h6>
+                <div>
+                  <div style="position:relative;">
+                    <a href="#">
+                      <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                    </a>
+                    <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                      <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                    </div>
+                  </div>
+                  <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                  <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                  <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+                </div>
+                <div>
+                  <div style="position:relative;">
+                    <a href="#">
+                      <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                    </a>
+                    <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                      <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                    </div>
+                  </div>
+                  <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                  <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                  <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+                </div>
+                <div>
+                  <div style="position:relative;">
+                    <a href="#">
+                      <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                    </a>
+                    <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                      <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                    </div>
+                  </div>
+                  <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                  <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                  <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+                </div>
+                <div style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="pb-3" >
+                  <div style="position:relative;">
+                    <a href="#">
+                      <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                    </a>
+                    <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                      <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                    </div>
+                  </div>
+                  <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                  <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                  <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+                </div>
+              </section>
+                </div>
+
+
+
+                <div class="col-lg-5">
+                  <!-- TOP STORY SM -->
+            <section class="top-story ">
+                <h6 class="font-weight-bold">TOP STORY</h6>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/gettyimages-634509166-594x594.jpg" style="width: 100%;" alt="TOP STORY image">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">WORLD</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Former U.S. Air Force Officer Allegedly Spied for Iran</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Witt had top-level security clearance while working for the U.S. government.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Giuliani Gives Rally Calling for Iran Regime Change</a>
+              </section>
+        
+              <!-- MORE STORIES SM-->
+              <section class="more-stories pt-4  bg-white  ">
+                <h6 class="font-weight-bold pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">MORE STORIES</h6>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+                <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+                </article>
+              </section>
+              <article class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style=" font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+                </div>
+
+
+
+                <div class="col-lg">
+                  <!-- OPINION -->
+            <section class=" opinion bg-white">
+                <h6 class="font-weight-bold">OPINION</h6>
+                <div style="min-height: 80px; " class="">
+                  <a href="#" class="float-left mr-3">
+                    <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                  </a> 
+                  <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                  <p class="pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); font-size: .8em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139); font-size: .9em;" >NEWT GINGRICH</a></p>
+                </div>
+                <div style="min-height: 80px; " class="">
+                  <a href="#" class="float-left mr-3">
+                    <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                  </a> 
+                  <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                  <p class="pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); font-size: .8em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139); font-size: .9em;" >NEWT GINGRICH</a></p>
+                </div>
+                <div style="min-height: 80px; " class="">
+                  <a href="#" class="float-left mr-3">
+                    <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                  </a> 
+                  <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                  <p class="pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); font-size: .8em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139); font-size: .9em;" >NEWT GINGRICH</a></p>
+                </div>
+                <div style="min-height: 80px; " class="">
+                  <a href="#" class="float-left mr-3">
+                    <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                  </a> 
+                  <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                  <p class="pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); font-size: .8em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139); font-size: .9em;" >NEWT GINGRICH</a></p>
+                </div>
+                <div style="min-height: 80px; " class="">
+                  <a href="#" class="float-left mr-3">
+                    <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                  </a> 
+                  <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                  <p class="pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); font-size: .8em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139); font-size: .9em;" >NEWT GINGRICH</a></p>
+                </div>
+                <div style="min-height: 80px; " class="">
+                  <a href="#" class="float-left mr-3">
+                    <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                  </a> 
+                  <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                  <p class="pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); font-size: .8em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139); font-size: .9em;" >NEWT GINGRICH</a></p>
+                </div>
+              </section>
+        
+              <!-- LATEST NEWS SM -->
+              <section class="latest-news pt-4 pt-sm-0 bg-white ">
+                <h6 class="font-weight-bold pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">LATEST NEWS</h6>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+              </section>
+              <!-- sign-up -->
+              <div class="sign-up mt-4" style="border: 1px solid rgba(194, 193, 193, 0.39); max-width: 301px; margin: 0 auto; background-color: rgb(244,245,246);">
+                <img src="images/sign-up.png" alt="sign up">
+                <a href="#" class=" text-decoration-none p-2 font-weight-bold" style="color: white; position:relative; left:25px; background-color: gray;">SIGN UP</a> <br>
+                <a href="#" class=" text-decoration-none p-2 font-weight-bold " style="position:relative; left:20px; top: 15px; font-size: .9em; color:rgb(85, 84, 84);">Update your preferences »</a> <br> <br>
+              </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="d-md-flex d-lg-none d-none">
+              <!-- FEATURED STORIES MD -->
+            <section class="pt-4 pt-sm-0 featured-stories bg-white px-3 float-sm-left d-none d-md-block" >
+              <h6 class="font-weight-bold" style="color:grey;">FEATURED STORIES</h6>
+              <div>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+              <div>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+              <div>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+              <div style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="pb-3" >
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+            </section>
+      
+            <div class="">
+              <!-- TOP STORY MD -->
+            <section class="top-story px-3 d-none d-md-block">
+              <h6 class="font-weight-bold">TOP STORY</h6>
+              <div style="position:relative;">
+                <a href="#">
+                  <img src="images/gettyimages-634509166-594x594.jpg" style="width: 100%;" alt="TOP STORY image">
+                </a>
+                <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                  <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">WORLD</a>
+                </div>
+              </div>
+              <a href="former" class="" >Former U.S. Air Force Officer Allegedly Spied for Iran</a>
+              <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Witt had top-level security clearance while working for the U.S. government.</p>
+              <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Giuliani Gives Rally Calling for Iran Regime Change</a>
+            </section>
+      
+            <!-- MORE STORIES MD -->
+            <section class="more-stories pt-4 pt-sm-0 bg-white px-3 d-none d-md-block">
+              <h6 class="font-weight-bold pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">MORE STORIES</h6>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                  <p class="" style="min-height: 110px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+            </section>
+            </div>
+            </div>
+      
+            
+      
+            <!-- TOP STORY SM -->
+            <section class="top-story p-3 float-sm-right d-md-none w-100">
+              <h6 class="font-weight-bold">TOP STORY</h6>
+              <div style="position:relative;">
+                <a href="#">
+                  <img src="images/gettyimages-634509166-594x594.jpg" style="width: 100%;" alt="TOP STORY image">
+                </a>
+                <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                  <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">WORLD</a>
+                </div>
+              </div>
+              <a href="former" class="" >Former U.S. Air Force Officer Allegedly Spied for Iran</a>
+              <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Witt had top-level security clearance while working for the U.S. government.</p>
+              <a href="Giuliani" class=" text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Giuliani Gives Rally Calling for Iran Regime Change</a>
+            </section>
+      
+            <!-- MORE STORIES SM-->
+            <section class="more-stories pt-4 pt-sm-0 bg-white px-3 d-md-none">
+              <h6 class="font-weight-bold pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">MORE STORIES</h6>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+              <article style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/gettyimages-924929238-594x594_0.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <p class="" style="min-height: 160px; font-size: .8em;"><a href="Parkland" class="font-weight-bold" style="font-size: 1.2em;"> Parkland Shooting, One Year Later</a> <br> "Until laws are passed and looked at from a nonpartisan perspective, things aren’t going to change,” Sarah Lerner, an English and journalism teacher at Marjory Stoneman Douglas High School, told Newsweek.</p>
+              </article>
+            </section>
+      
+            <!-- FEATURED STORIES SM-->
+            <section class="pt-4 pt-sm-0 featured-stories bg-white px-3 d-md-none">
+              <h6 class="font-weight-bold" style="color:grey;">FEATURED STORIES</h6>
+              <div>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+              <div>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+              <div>
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+              <div style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="pb-2" >
+                <div style="position:relative;">
+                  <a href="#">
+                    <img src="images/sarahsandersmuellertestifyrussia.jpg" style="width: 100%;" alt="">
+                  </a>
+                  <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                    <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                  </div>
+                </div>
+                <a href="former" class="" >Sarah Sanders Interviewed by Mueller, ‘Urged’ by Trump</a>
+                <p class="pb-3" style="font-size: .9em; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" >Sarah Sanders is the latest Trump administration official known to have sat down with special counsel Robert Mueller.</p>
+                <a href="Giuliani" class="text-decoration-none font-weight-bold" style="font-size: 1.1em; color: black; ">Sarah Sanders Quotes: 5 Misleading Claims</a>
+              </div>
+            </section>
+      
+            <!-- OPINION -->
+            <section class=" opinion bg-white px-3 py-4 d-lg-none">
+              <h6 class="font-weight-bold pb-2">OPINION</h6>
+              <div style="min-height: 80px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="py-3">
+                <a href="#" class="float-left mr-3">
+                  <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                </a> 
+                <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                <p style="font-size: .9em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139);" >NEWT GINGRICH</a></p>
+              </div>
+              <div style="min-height: 80px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="py-3">
+                <a href="#" class="float-left mr-3">
+                  <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                </a> 
+                <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                <p style="font-size: .9em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139);" >NEWT GINGRICH</a></p>
+              </div>
+              <div style="min-height: 80px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="py-3">
+                <a href="#" class="float-left mr-3">
+                  <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                </a> 
+                <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                <p style="font-size: .9em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139);" >NEWT GINGRICH</a></p>
+              </div>
+              <div style="min-height: 80px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="py-3">
+                <a href="#" class="float-left mr-3">
+                  <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                </a> 
+                <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                <p style="font-size: .9em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139);" >NEWT GINGRICH</a></p>
+              </div>
+              <div style="min-height: 80px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="py-3">
+                <a href="#" class="float-left mr-3">
+                  <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                </a> 
+                <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                <p style="font-size: .9em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139);" >NEWT GINGRICH</a></p>
+              </div>
+              <div style="min-height: 80px; " class="py-3">
+                <a href="#" class="float-left mr-3">
+                  <img src="images/nw-columnist-newt-gingrich.png" alt="gingrich">
+                </a> 
+                <a href="#" class="text-decoration-none font-weight-bold" style=" color: black; ">We Owe Our Freedom To George Washington</a>
+                <p style="font-size: .9em; color: rgb(139, 139, 139);">BY <a href="#"class="text-decoration-none font-weight-bold" style="color: rgb(139, 139, 139);" >NEWT GINGRICH</a></p>
+              </div>
+            </section>
+      
+            <!-- LATEST NEWS SM -->
+            <section class="latest-news pt-4 pt-sm-0 bg-white px-3 d-md-none">
+              <h6 class="font-weight-bold pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">LATEST NEWS</h6>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+              <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                  <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE STORIES image">
+                  <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+              </article>
+            </section>
+      
+            <!-- LATEST NEWS MD -->
+            <section class="latest-news pt-4 pt-sm-0 bg-white px-3 d-md-block d-none d-lg-none">
+                <h6 class="font-weight-bold pb-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">LATEST NEWS</h6>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+                <article style="min-height: 130px; border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mt-2  pt-2 ">
+                    <img src="images/lightsaber-duelling.jpg" class="float-left mr-3"  alt="MORE-STORIES-image">
+                    <a href="Lightsaber" class="text-decoration-none font-weight-bold" style=" color: black;">Lightsaber Duelling Officially Recognized as a Sport</a>
+                </article>
+              </section>
+      
+            <!-- sign-up -->
+            <div class="sign-up mt-4 d-lg-none" style="border: 1px solid rgba(194, 193, 193, 0.39); max-width: 301px; margin: 0 auto; background-color: rgb(244,245,246);">
+              <img class="w-100" src="images/sign-up.png" alt="sign up">
+              <a href="#" class=" text-decoration-none p-2 font-weight-bold" style="color: white; position:relative; left:25px; background-color: gray;">SIGN UP</a> <br>
+              <a href="#" class=" text-decoration-none p-2 font-weight-bold " style="position:relative; left:20px; top: 15px; font-size: .9em; color:rgb(85, 84, 84);">Update your preferences »</a> <br> <br>
+            </div>
+      
+            <!-- in-the-magazine -->
+            <section class="in-the-magazine pt-4 d-md-block container-fluid">
+              <div class="row">
+                  <div class="col-md-3">
+                      <section class="see-all-features mt-5  bg-white d-md-block ">
+                       <div class="d-inline">
+                        <a href="#">
+                          <img src="images/lebron1800x2400.jpg" class="img-fluid" alt="lebron">
+                        </a>
+                        <a href="#" class="text-danger text-decoration-none p-2 font-weight-bold" style="font-size: .9em; position: relative; bottom: 30px; background-color: rgb(255, 243, 243);">FEBRUARY 22 ISSUE</a>
+                       </div>
+                       <a href="features" class="d-block font-weight-bold text-reset text-center text-decoration-none p-2" style=" position: relative; bottom: 24px; background: rgb(231, 231, 231);">SEE ALL FEATURES</a>
+                      </section>
+                      
+                    </div>
+                    <div class="col-md-9 pt-lg-5">
+                        <img class="d-block pb-3" src="images/in-the-magazine.jpg" style="margin: 0 auto;" alt="in-the-magazine">
+                        <div style="border-top: 1px solid rgba(170, 170, 170, 0.609);" class="pt-3 p-0 container-fluid">
+                          <div class="row">
+                              <div class="col-md">
+                                <a href="#" class="mb-3 d-block">
+                                  <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                                </a>
+                                <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                                <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                                <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                              </div>
+                              <div class="col-md">
+                                <a href="#" class="mb-3 d-block">
+                                  <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                                </a>
+                                <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                                <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                                <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                              </div>
+                              <div class="col-md">
+                                <a href="#" class="mb-3 d-block">
+                                  <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                                </a>
+                                <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                                <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                                <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-md">
+                    <a href="#" class="mb-3 d-block">
+                      <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                    </a>
+                    <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                    <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                    <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                  </div>
+                  <div class="col-md">
+                    <a href="#" class="mb-3 d-block">
+                      <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                    </a>
+                    <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                    <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                    <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                  </div>
+                  <div class="col-md">
+                    <a href="#" class="mb-3 d-block">
+                      <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                    </a>
+                    <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                    <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                    <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                  </div>
+                  <div class="col-md">
+                    <a href="#" class="mb-3 d-block">
+                      <img src="images/felebron011084367066use-banner.jpg" class="w-100" alt="lebron">
+                    </a>
+                    <span class="text-white font-weight-bold p-1" style="background: rgb(247,34,16);">FEATURES</span>
+                    <a href="#" class="pl-2 text-danger text-decoration-none font-weight-bold">U.S.</a>
+                    <a href="Kareem" class="d-block font-weight-bold mt-2 mb-4">Kareem Abdul-Jabbar: LeBron Is a Hero for Our Time</a>
+                  </div>
+              </div> 
+              </section>
+
+            <!-- editors-pick -->
+            <section class="editors-pick container-fluid ">
+                <div style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="mb-3 ">
+                    <img class="d-block pb-3" src="images/pick.jpg" style="margin: 0 auto;"  alt="pick">
+                </div>
+                <div class="row container-fluid m-0 p-0">
+                  <div class="col-md row m-0 p-0 mr-md-3">
+                      <div class="col-lg mr-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                        <div class="col-lg ml-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                  </div>
+                  <div class="col-md row m-0 p-0 ml-md-3">
+                      <div class="col-lg mr-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                        <div class="col-lg ml-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="row container-fluid m-0 p-0">
+                  <div class="col-md row m-0 p-0 mr-md-3">
+                      <div class="col-lg mr-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                        <div class="col-lg ml-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                  </div>
+                  <div class="col-md row m-0 p-0 ml-md-3">
+                      <div class="col-lg mr-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                        <div class="col-lg ml-lg-3 p-0">
+                          <div style="position:relative;">
+                            <a href="#">
+                              <img src="images/andrew-mccabe-and-jeff-sessions.jpg" style="width: 100%;" alt="andrew-mccabe-and-jeff-sessions">
+                            </a>
+                            <div class="py-1 px-3" style="position:absolute; bottom: 0; background:rgb(244,245,246);">
+                              <a href="#" style="color: red;" class="text-decoration-none  font-weight-bold">U.S.</a>
+                            </div>
+                          </div>
+                          <a href="former" class="" >Former Acting FBI Director Tears Into Jeff Sessions</a>
+                          <p class="pb-3" style="font-size: .9em;" >“The conversations I had with Attorney General Sessions were unlike anything I had seen from any other attorney general,” Andrew McCabe said on "The View."</p>
+                        </div>
+                  </div>
+                </div>
+            </section>
+            
+            
+
+            <!-- featured-slideshows -->
+            <section class="featured-slideshows px-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+              <a href="#" class="d-block mb-3" style="width: 230px; margin: 0 auto; ">
+                <img src="images/slideshows.jpg"  alt="slideshows">
+              </a>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                    <a href="#">
+                      <img src="images/muslim.jpg" class="w-100" alt="muslim women">
+                    </a>
+                    <a href="muslim women" class="font-weight-bold mt-2 mb-4 d-block">How Muslim Women Are Taking Fashion to the Next Level</a>
+                  </div>
+                  <div class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                    <a href="#">
+                      <img src="images/muslim.jpg" class="w-100" alt="muslim women">
+                    </a>
+                    <a href="muslim women" class="font-weight-bold mt-2 mb-4 d-block">How Muslim Women Are Taking Fashion to the Next Level</a>
+                  </div>
+                  <div class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                    <a href="#">
+                      <img src="images/muslim.jpg" class="w-100" alt="muslim women">
+                    </a>
+                    <a href="muslim women" class="font-weight-bold mt-2 mb-4 d-block">How Muslim Women Are Taking Fashion to the Next Level</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                    <a href="#">
+                      <img src="images/muslim.jpg" class="w-100" alt="muslim women">
+                    </a>
+                    <a href="muslim women" class="font-weight-bold mt-2 mb-4 d-block">How Muslim Women Are Taking Fashion to the Next Level</a>
+                  </div>
+                  <div class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                    <a href="#">
+                      <img src="images/muslim.jpg" class="w-100" alt="muslim women">
+                    </a>
+                    <a href="muslim women" class="font-weight-bold mt-2 mb-4 d-block">How Muslim Women Are Taking Fashion to the Next Level</a>
+                  </div>
+                  <div class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                    <a href="#">
+                      <img src="images/muslim.jpg" class="w-100" alt="muslim women">
+                    </a>
+                    <a href="muslim women" class="font-weight-bold mt-2 mb-4 d-block">How Muslim Women Are Taking Fashion to the Next Level</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+      
+            <!-- U.S. -->
+            <section class="US my-3 latest-news px-3">
+              <a href="#" class="text-decoration-none text-danger font-weight-bold" style="font-size: 1.2em;">U.S.</a>
+              <div class="container-fluid p-0">
+                <div class="row ">
+                  <div class="col-md">
+                    <div class="my-2">
+                      <a href="#">
+                        <img src="images/couple.jpg" alt="lgbt" class="img-fluid">
+                      </a>
+                      <a href="Couple" class="font-weight-bold">Couple Says they Were Turned Away by Tax Preparer</a>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="my-2">
+                      <a href="#">
+                        <img src="images/couple.jpg" alt="lgbt" class="img-fluid">
+                      </a>
+                      <a href="Couple" class="font-weight-bold">Couple Says they Were Turned Away by Tax Preparer</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                      <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="article mt-2  pt-2 d-md-flex">
+                        <img  src="images/supermoon-rising-over-dc.jpg" class="small-pic mr-3  p-0 float-left"  alt="MORE STORIES image">
+                        <a href="Lightsaber" class="pt-md-1 text-decoration-none font-weight-bold" style=" color: black;">What's Perigee and How Does It Cause a Supermoon?</a>
+                    </article>
+                    <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="article mt-2  pt-2 d-md-flex">
+                      <img src="images/supermoon-rising-over-dc.jpg" class="small-pic mr-3  p-0 float-left"  alt="MORE STORIES image">
+                      <a href="Lightsaber" class="pt-md-1 text-decoration-none font-weight-bold" style=" color: black;">What's Perigee and How Does It Cause a Supermoon?</a>
+                  </article>
+                  <article style=" border-bottom: 1px solid rgba(170, 170, 170, 0.609);" class="article mt-2  pt-2 d-md-flex">
+                    <img src="images/supermoon-rising-over-dc.jpg" class="small-pic  mr-3  p-0 float-left"  alt="MORE STORIES image">
+                    <a href="Lightsaber" class="pt-md-1 text-decoration-none font-weight-bold" style=" color: black;">What's Perigee and How Does It Cause a Supermoon?</a>
+                </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+      
+            <!-- SUBSCRIBE -->
+            <section class="subscribe px-3 d-lg-none">
+              <h6 class="text-danger font-weight-bold">SUBSCRIBE</h6>
+              <div class="container-fluid pb-3" style="background: rgb(244,245,246);">
+                <div class="row">
+                  <div class="col-md">
+                      <div class=" py-4 d-sm-flex " style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); ">
+                          <img class="mr-3" src="images/package1.png" alt="package1">
+                          <div>
+                              <a href="Digital" class="" >Digital Only</a>
+                              <ul>
+                                <li>Free access to 40+ digital editions</li>
+                                <li>Website access</li>
+                                <li>Daily Newsletter</li>
+                              </ul>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md">
+                      <div class=" py-4 d-sm-flex" >
+                          <img class="mr-3" src="images/package2.png" alt="package1">
+                          <div>
+                              <a href="Digital" class="" >Print & Digital</a>
+                              <ul>
+                                <li>Weekly magazine, delivered</li>
+                                <li>Daily Newsletter</li>
+                                <li>Website access</li>
+                              </ul>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="p-2 text-center text-decoration-none bg-danger text-white font-weight-bold" style="font-size: 1.1em; min-width: 100px; margin: 0 auto;">SUBSCRIBE</a>
+                </div>
+              </div>
+            </section>
+      
+            <!-- MOST READ -->
+            <section class="most-read mt-4 px-3 d-lg-none">
+              <h6 class="py-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                <a href="#" class="text-decoration-none text-reset" style="color:rgb(44, 44, 44) !important;">MOST READ</a>
+              </h6>
+              <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                <a href="#">
+                    <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                </a>
+                <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+              </div>
+              <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                <a href="#">
+                    <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                </a>
+                <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+              </div>
+              <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                <a href="#">
+                    <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                </a>
+                <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+              </div>
+              <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                <a href="#">
+                    <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                </a>
+                <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+              </div>
+              <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                <a href="#">
+                    <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                </a>
+                <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+              </div>
+            </section>
+
+
+
+            <!-- SUBSCRIBE --> <!-- MOST READ -->
+            <div class="container-fluid d-none d-lg-block">
+              <div class="row justify-content-between">
+                  <div>            
+                    <section class="subscribe px-3 pt-3">
+                      <h6 class="text-danger font-weight-bold">SUBSCRIBE</h6>
+                      <div class="container-fluid pb-3" style="background: rgb(244,245,246);">
+                        
+                         
+                              <div class=" py-4 d-flex " style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); ">
+                                  <img class="mr-3" src="images/package1.png" alt="package1">
+                                  <div>
+                                      <a href="Digital" class="" >Digital Only</a>
+                                      <ul>
+                                        <li>Free access to 40+ digital editions</li>
+                                        <li>Website access</li>
+                                        <li>Daily Newsletter</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                        
+                          
+                              <div class=" py-4 d-flex" >
+                                  <img class="mr-3" src="images/package2.png" alt="package1">
+                                  <div>
+                                      <a href="Digital" class="" >Print & Digital</a>
+                                      <ul>
+                                        <li>Weekly magazine, delivered</li>
+                                        <li>Daily Newsletter</li>
+                                        <li>Website access</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                        
+                        
+                        <div class="row">
+                            <a href="#" class="p-2 text-center text-decoration-none bg-danger text-white font-weight-bold" style="font-size: 1.1em; min-width: 100px; margin: 0 auto;">SUBSCRIBE</a>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div>            
+                    <section class="most-read mt-4 px-3" style="max-width: 450px;">
+                      <h6 class="py-2" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                        <a href="#" class="text-decoration-none text-reset" style="color:rgb(44, 44, 44) !important;">MOST READ</a>
+                      </h6>
+                      <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                        <a href="#">
+                            <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                        </a>
+                        <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+                      </div>
+                      <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                        <a href="#">
+                            <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                        </a>
+                        <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+                      </div>
+                      <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                        <a href="#">
+                            <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                        </a>
+                        <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+                      </div>
+                      <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                        <a href="#">
+                            <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                        </a>
+                        <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+                      </div>
+                      <div class="mt-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); min-height: 80px;">
+                        <a href="#">
+                            <img class="float-left mr-3" src="images/mike-pence-msc.jpg" alt="mike-pence">
+                        </a>
+                        <a href="White House" class="text-decoration-none text-reset">White House Claims Munich Crowd Cheered for Trump—Wrong</a>
+                      </div>
+                    </section>
+                  </div>
+              </div>
+              
+            </div>
+            <!-- FOOTER -->
+            <footer class="footer my-4 px-3">
+              <div class="container-fluid pb-3 pb-md-0 px-0" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                  <div  class="row">
+                      <div class="col-md">
+                          <a href="#" class="">
+                              <img class="mb-md-3" src="images/logo-red.jpg" alt="logo-red">
+                          </a>
+                          <small class="mb-2 d-block d-md-inline">© 2019 NEWSWEEK</small>
+                        </div>
+                          <a href="#" class="col-md-3 pt-md-2">
+                              <img class="float-md-right" src="images/icons.jpg" alt="icons">
+                            </a>
+                    </div>
+              </div>
+             
+              <div class="d-flex flex-column flex-lg-row justify-content-between">
+                  <div class="padding" style="max-width: 800px;">
+                      <a href="#">About Us</a> | 
+                      <a href="#">Corrections</a> | 
+                      <a href="#">Contact Us</a> | 
+                      <a href="#">Travel</a> | 
+                      <a href="#">Advertise</a> | 
+                      <a href="#">Copyright</a> | 
+                      <a href="#">Terms & Conditions</a> | 
+                      <a href="#">Privacy Policy</a> | 
+                      <a href="#">Cookie Policy</a> | 
+                      <a href="#">Terms of Sale</a> | 
+                      <a href="#">Archive</a> | 
+                      <a href="#">Announcements</a> | 
+                      <a href="#">Consent preferences</a>
+                    </div>
+                    <div class="d-flex mt-2" style="max-width: 400px;">
+                      <h6 class="mr-2 mt-1 text-dark">Editions:</h6>
+                      <div class="padding">
+                          <a href="#">U.S. Edition</a> | 
+                          <a href="#">Middle East</a> | 
+                          <a href="#">日本</a> | 
+                          <a href="#">한국</a> | 
+                          <a href="#">Pakistan</a> | 
+                          <a href="#">Polska</a> | 
+                          <a href="#">România</a> | 
+                      </div>
+                    </div>
+              </div>
+              
+            </footer>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
